@@ -1,0 +1,116 @@
+:root {
+  font-size: 16px;
+  font-family: "averir next", Helvetica, arial;
+}
+
+.container {
+  width=1350px;
+  margin: 20 auto;
+}
+
+header {
+  display: flex;
+  /* to center */
+  justify-content: center;
+  /* to center */
+  font-size: 3rem;
+  color: #3f737e;
+  padding: 4rem;
+}
+
+.hero {
+  width: 100%;
+}
+
+nav {
+  /**/border: 1px solid red;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+ul {
+  /**/border: 1px solid blue;
+  display: flex;
+  /* or inline-flex */
+  justify-content: center;
+  list-style: none;
+  /* get rid of bullet marks on list */
+  flex-wrap: wrap;
+}
+
+li {
+  /**/border: 1px solid blue;
+  flex-direction: row;
+  margin: 0 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #888888;
+}
+
+main {
+    border: 1px solid red;
+  width: 100%;
+  display: flex;
+  /* to center */
+  justify-content: center;
+  /* to center */
+  flex-wrap: wrap;
+}
+
+#news {}
+
+li a:hover {
+  color: red;
+}
+
+article {
+  width: 19em;
+  display: block;
+  margin: 40px;
+}
+
+article img {
+  width: 300px;
+  height: 150px;
+  diaplay: block;
+}
+
+footer {
+  background: #3f737e;
+  text-transform: uppercase;
+  color: white;
+  padding: 4rem;
+  display: flex;
+  /* to center */
+  justify-content: center;
+  /* to center */
+}
+
+@media (max-width:499px) {
+
+  main {
+    display: flex;
+    flow: left;
+    /*height: 300px;*/
+    height: auto;
+  }
+  ul {
+    display: flex;
+    /* or inline-flex */
+    justify-content: left;
+    list-style: none;
+    /* get rid of bullet marks on list
+    flex-wrap: wrap;*/
+  }
+  li {
+    flex-direction: column;
+    margin: 0 40px;
+  }
+  article {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+}
